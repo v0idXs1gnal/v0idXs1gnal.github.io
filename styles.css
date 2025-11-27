@@ -51,6 +51,13 @@ body {
         0 0 30px rgba(102, 224, 255, 0.15);
 }
 
+.prompt {
+    color: #66e0ff;
+    margin-right: 6px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
 /* Tagline */
 .tagline {
     margin-top: 12px;
