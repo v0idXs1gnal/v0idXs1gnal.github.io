@@ -6,21 +6,14 @@
     font-family: "Share Tech Mono", monospace;
 }
 
-html, body {
-    overflow-x: hidden;
-    box-sizing: border-box; /* ensures shadows & pseudo-elements don't expand width */
-    width: 100%;
-}
-
 /* Cyber Grid Background */
 body {
     background: #0b0c10;
     color: #c5d7e8;
     line-height: 1.7;
-
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 40px 40px;
 }
 
@@ -105,7 +98,7 @@ body {
 .top-nav {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 9999;
     width: 100%;
     padding: 16px 0;
     display: flex;
@@ -156,7 +149,6 @@ body {
 .top-nav a:focus::after {
     transform: scaleX(1);
 }
-
 
 /* Smooth Scroll */
 html {
