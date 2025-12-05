@@ -6,6 +6,12 @@
     font-family: "Share Tech Mono", monospace;
 }
 
+html, body {
+    overflow-x: hidden;
+    box-sizing: border-box; /* ensures shadows & pseudo-elements don't expand width */
+    width: 100%;
+}
+
 /* Cyber Grid Background */
 body {
     background: #0b0c10;
@@ -29,6 +35,7 @@ body {
     border-bottom-right-radius: 50px;
     box-shadow: 0 40px 40px rgba(0, 0, 0, 0.35);
     overflow: hidden;
+    max-width: 100%;
 }
 
 .hero::before {
@@ -82,7 +89,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     bottom: -10px;
-    width: 12%;
+    width: clamp(40px, 10vw, 80px);
     height: 8px;
     background: radial-gradient(
         ellipse at center,
