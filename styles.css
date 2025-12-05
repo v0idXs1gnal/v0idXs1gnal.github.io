@@ -332,3 +332,43 @@ footer {
     margin-top: 80px;
     border-top: 1px solid #1f2833;
 }
+
+/*  UNIVERSAL MOBILE NAVBAR FIX (Single Row, No Wrapping) */
+@media (max-width: 768px) {
+
+    .top-nav {
+        gap: 18px;
+        padding: 12px 0;
+        white-space: nowrap;       /* absolute requirement: no wrapping */
+    }
+
+    .top-nav a {
+        font-size: 0.9rem;
+        padding: 0 4px;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .top-nav {
+        gap: 14px;                 /* make room for narrower phones */
+    }
+
+    .top-nav a {
+        font-size: 0.8rem;         /* safe, readable, fits all modern phones */
+        padding: 0 2px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .top-nav {
+        gap: 8px;                  /* extreme compression for very small screens */
+    }
+
+    .top-nav a {
+        font-size: 0.72rem;        /* still readable, guaranteed fit */
+        padding: 0;
+    }
+}
