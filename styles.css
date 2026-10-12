@@ -290,7 +290,6 @@ h2 {
     margin-top: 15px;
     text-decoration: none;
     border-radius: 6px;
-    font-weight: bold;
 }
 
 .project-btn.disabled {
@@ -338,7 +337,7 @@ footer {
     .top-nav {
         gap: 18px;
         padding: 12px 0;
-        white-space: nowrap;       /* absolute requirement: no wrapping */
+        white-space: nowrap;      
     }
 
     .top-nav a {
@@ -351,11 +350,11 @@ footer {
 @media (max-width: 480px) {
 
     .top-nav {
-        gap: 14px;                 /* make room for narrower phones */
+        gap: 14px;                 
     }
 
     .top-nav a {
-        font-size: 0.8rem;         /* safe, readable, fits all modern phones */
+        font-size: 0.8rem;         
         padding: 0 2px;
     }
 }
@@ -363,11 +362,11 @@ footer {
 @media (max-width: 360px) {
 
     .top-nav {
-        gap: 8px;                  /* extreme compression for very small screens */
+        gap: 8px;                  
     }
 
     .top-nav a {
-        font-size: 0.72rem;        /* still readable, guaranteed fit */
+        font-size: 0.72rem;        
         padding: 0;
     }
 }
