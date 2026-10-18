@@ -265,6 +265,10 @@ h2 {
     padding: 22px;
     transition: 0.25s ease;
     animation: neonPulse 3s infinite ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .project-card:hover {
@@ -290,6 +294,8 @@ h2 {
     margin-top: 15px;
     text-decoration: none;
     border-radius: 6px;
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 .project-btn.disabled {
