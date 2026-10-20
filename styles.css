@@ -238,7 +238,10 @@ h2 {
     background: #1b1e25;
     border: 1px solid #2b3542;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-weight: bold;
     transition: 0.25s ease;
